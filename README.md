@@ -1,4 +1,8 @@
-1. アプリを登録  
+1. Twitter4Jをライブラリに追加  
+http://twitter4j.org/ja/index.html からtwitter4j-4.0.2.zipをダウンロード.  
+zipを展開したら,lib/twitter4j-core-4.0.2.jar をライブラリに追加.
+
+2. アプリを登録  
 https://apps.twitter.com/ から"Create New App"をクリック.  
 Name, Description, Websiteを適当に記入する.  
 このアカウントのみで利用するならCallbackURLは必要ない.  
@@ -11,7 +15,7 @@ Keys and Access Tokensタブから自分のAccessTokenを生成する.
  - Access Token Secret  
 をメモしておく.
   
-2. Tweet.javaを書き換える  
+3. Tweet.javaを書き換える  
 Test/app/src/main/java/com/example/kekke/test/Tweet.javaの
  - setOAuthConsumerKey
  - setOAuthConsumerSecret
@@ -20,7 +24,7 @@ Test/app/src/main/java/com/example/kekke/test/Tweet.javaの
 を,1でメモしておいたものでそれぞれ書き換える.  
 
 
-3. 呼び出す  
+4. 呼び出す  
 Tweet tweet = new Tweet(getApplicationContext(), "Hello, World!");  
 tweet.forceLoad();  
 のように呼び出す.
