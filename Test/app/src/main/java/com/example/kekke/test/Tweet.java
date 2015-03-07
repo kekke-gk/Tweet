@@ -24,10 +24,10 @@ public class Tweet extends AsyncTaskLoader<Void>{
 
         ConfigurationBuilder cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
-                .setOAuthConsumerKey("0PUgmBFO0BYnzoH7DhWO0XT0q")
-                .setOAuthConsumerSecret("5GJRc6kZZdG1Ea9U8JUpCo75E53BzWsVvWsg4RyugQRPtPBcI9")
-                .setOAuthAccessToken("3064528423-JOY7ewAfOlxDgogPYgfmBwVyUlXh0AD9KkLuPVX")
-                .setOAuthAccessTokenSecret("8QwrXjAYxBm93ZnO7rf9E92s5RVTHXQnBQfSyeV1NnGwa");
+                .setOAuthConsumerKey("*************************")
+                .setOAuthConsumerSecret("**************************************************")
+                .setOAuthAccessToken("**************************************************")
+                .setOAuthAccessTokenSecret("*********************************************");
         TwitterFactory tf = new TwitterFactory(cb.build());
         Twitter twitter = tf.getInstance();
         try{
